@@ -37,4 +37,27 @@ public class Agenda {
 		return "";
 	}
 	
+	
+	public String listaNomesEmOrdemAlfabetica(){
+		
+		return "";
+	}
+	
+	public void carregaAgenda(){
+		
+	}
+	
+	public void salvaAgenda(){
+		
+	}
+
+//    implemente uma agenda telefônica, que permite:
+//        armazenar um nome e seu telefone;
+//        recuperar um telefone, a partir do nome;
+//        listar todos os nomes da agenda, em ordem alfabética;
+//        recuperar os dados armazenados em um arquivo texto ao iniciar o programa;
+//        salvar os dados da agenda ao encerrar o programa.
+//    organize a aplicação usando os padrões citados, conforme apropriado. Use os exemplos fornecidos no moodle como orientação.
+
+	
 }
