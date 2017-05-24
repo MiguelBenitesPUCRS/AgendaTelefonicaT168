@@ -1,10 +1,16 @@
 package negocio;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+
 
 public class Agenda {
 
 	private Contato contato;
+	private AgendaPorNome comparador  = new AgendaPorNome();
+	
 	private ArrayList agenda;
 	
 	public Agenda(){
@@ -39,8 +45,15 @@ public class Agenda {
 	
 	
 	public String listaNomesEmOrdemAlfabetica(){
+		String retorno="";
+		Contato contato;
+		Collections.sort(agenda, comparador);
 		
-		return "";
+		for(int i=0;i<agenda.size();i++){
+			contato = (Contato) agenda.get(i);
+			retorno = retorno + contato.getNome()+"\n";
+		}
+		return retorno;
 	}
 	
 	public void carregaAgenda(){
@@ -50,14 +63,20 @@ public class Agenda {
 	public void salvaAgenda(){
 		
 	}
+	
+	public ArrayList<Contato> getAgenda(){
+		return agenda;
+	}
 
-//    implemente uma agenda telefônica, que permite:
+	
+
+//    implemente uma agenda telefï¿½nica, que permite:
 //        armazenar um nome e seu telefone;
 //        recuperar um telefone, a partir do nome;
-//        listar todos os nomes da agenda, em ordem alfabética;
+//        listar todos os nomes da agenda, em ordem alfabï¿½tica;
 //        recuperar os dados armazenados em um arquivo texto ao iniciar o programa;
 //        salvar os dados da agenda ao encerrar o programa.
-//    organize a aplicação usando os padrões citados, conforme apropriado. Use os exemplos fornecidos no moodle como orientação.
+//    organize a aplicaï¿½ï¿½o usando os padrï¿½es citados, conforme apropriado. Use os exemplos fornecidos no moodle como orientaï¿½ï¿½o.
 
 	
 }
