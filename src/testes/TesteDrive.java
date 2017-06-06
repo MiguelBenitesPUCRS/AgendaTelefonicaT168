@@ -3,7 +3,7 @@ package testes;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import negocio.Agenda;
+import negocio.AgendaContatos;
 import negocio.Contato;
 import persistencia.Arquivo;
 
@@ -17,7 +17,7 @@ public class TesteDrive {
 		Contato c2 = new Contato("Miguel", "99137-5375");
 		Contato c3 = new Contato("Ana", "91824233");
 		
-		Agenda a = new Agenda();
+		AgendaContatos a = new AgendaContatos();
 		Arquivo ar = new Arquivo();
 		
 		a.insereContato(c0);
